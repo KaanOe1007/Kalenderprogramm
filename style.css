@@ -1,0 +1,262 @@
+/* Allgemeiner Style */
+body {
+	background-image:url(endlich.jpg);                         /*Als Hintergrundbild wird ein Bild aus dem Kalenderprogrammordner bestimmt */
+	background-size: 3000px;			                       /*Die Größte des Bildes wird bestimmt*/
+	font-size:100%; 				                           /* Schriftgröße auf 100% Elternelement, danach richtet sich em /100% sind 16px */
+	margin:0em;						 	                       /* Äußerer Abstand/em ist eine relative Angabe die mit der 100% der Schriftgröße arbeitet */
+	padding:0em; 						                       /* Innerer Abstand */
+}
+
+ .ghost_btn {							                       /* Schmaller, durchsichtiger Button */
+   	text-decoration: none;				                       /* Keine Unterlinie */
+    font-size: 100%;				                           /* Buttongröße */
+    font-weight:800;					                       /* Buttonschriftgröße */
+    color: #FFF ;						                       /* Buttonschriftfarbe */
+    border: 4px solid #FFF;				                       /* Buttonrandgröße und farbe */
+    padding: 0.25em 1em;				                       /* Abstand zwischen Wort und Rahmen erst oben unten(vertikal) dann links und rechts(horizontal) */
+    overflow: hidden; 					                       /* Wenn die Buttoninhalt hinausragt, wird dieser versteckt */
+    border-radius: 20px;				                       /* Form des Buttonrahmens/=um wieviel px sich der rahmen krümt*/
+    cursor: pointer;					                       /* animation einer hand beim rüber fahren mit der Maus */
+    float:right;						                       /* Ausrichtung rechts */
+    margin: 1em;						                       /* Äußerer Abstand, Ausrichtung */
+ }
+ 
+a.ghost_btn:hover{						                       /*hier wird bearbeitet, wenn über den ghost button mit der Maus gefahren wird*/
+   background: rgba(255, 255, 255, 0.5);	                   /*rgba ist eine möglichkeit die farbe zu bestimmen*/
+  color: #000;
+}
+h1 {
+	font-size:2.1em; 					                       /* 1em ist die größe die im Elternelement angegeben wurde, also 100%( body, font-size:100%=16pixel)2.5 ist 2.5 x 16 pixel=40pixel */
+	line-height:2em;					                       /*flächenhöhe*/
+	font-family:Helvetica;
+	font-weight:200;
+	color:#2F2D2C;
+	margin:0em;
+}
+
+h2 {
+	font-size:1.563em;       			                       /* Schriftgröße */ 
+	line-height:1.8em; 					                       /* Höhe der Textzeile */
+	font-family:Helvetica;				                       /* Schriftart */
+	font-weight:100; 					                       /* Schriftdicke */
+	margin:0em;                 		                       /* Außenrand-abstand */
+	padding:1.25em;             		                       /* Innenabstand eines Elements, bereich zwischen dem inhalt und dem rahmen */
+	text-align:left;            		                       /* linksbündige Ausrichtung des Inhaltes */
+}
+
+h3 {
+	font-size:1.3em;
+	margin:2em;
+	text-align:left;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+p {
+	line-height:1.25em;
+	font-family:Helvetica;
+	font-weight:100;
+	color:#000000;
+	margin:0em;
+	padding:1.25em;
+	text-align:justify;        			                       /* Ausführung in Blocksatz */
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+}
+
+li {
+	list-style:square;          		                       /* Quadratische Auflistungspunkte */
+	font-family:Helvetica;
+	font-weight:100;
+	color:#000000;
+	line-height:1.25em;
+	margin:0em;
+	padding:0em;
+	margin:0.313em 0em 0.313em 0em; 	                       /* oben 0.313em, rechts 0em, unten 0.313em, links 0em */
+}
+
+img {                           		                       /* Bilder werden in Relation zum Elternelement, also zur originalgröße in % angepasst */
+	width:30%;
+	height:10%;
+	max-width:100%;
+}
+
+a {                                  	                       /* hyperlink definition */
+	text-decoration: none;				                       /* Keine optischen Aspekte */
+	font-size: 1.25em;										   /* Schriftgröße von Verlinkungen */
+}
+
+/* On Top Bar */
+
+#menubar {
+	width:96%;							                       /* ändert ihre größe nicht beim verkleinern der seite bis 4% bleiben bis zur eigentlichen größe  */  
+	max-width:965px;					                       /* Breite der Menübar */
+	margin: auto;					                           /* Zentriert die fläche*/
+	background-size: 1000px;
+	height: 70px;						                       /* Höhe der Menüleiste */
+	border-bottom:0.188em solid #E7590B;
+}
+
+#menubar ul {							                       /* Bezogen auf das Kalendersymbol */
+	display:block;
+	width:15em;
+	height: 30em;
+	padding:0.9em;
+}
+#menubar ul li {
+	display:inline;                                            /* Auflistungspunkte werden in einer Linie aufgeführt */
+}
+#menubar ul li a.menubutton {			                       /*kalendersymbol wird nicht anezeigt(unten folgt mehr)*/
+	display:none;
+}
+/* Header */
+
+header {
+	width:96%;								   
+	max-width:965px;
+	margin: auto;						                       /* Zentriert die Fläche*/
+	display:block;                                             /* soll die volle breite der website nutzen */
+	text-align:center;					                       /* Schrift zentriert */
+	border-bottom:0.188em solid #E7590B;                       /* Unterer orangener Rand */
+}
+
+/* Navigation */
+
+nav{
+	width:96%;								                   /* prozentualler anteil wird vom elternelement ermittelt */
+	max-width:965px;
+	margin: auto;							                   /* Zentriert die fläche*/
+	background-size: 2000px;
+	text-align:center;							               /* text der Menüpunkte Mittig */
+	
+}
+nav ul{
+	display:block;
+}
+nav ul li{
+	display:inline;
+	margin:0em 0.188em 0em 0.188em;				               /* Abstand zwischen den Menüpunkten */
+}
+nav ul li a{ 									               /* Anpassung der Links im allgemeinen */
+	color:#454040;
+	font-size: 1.125em;
+	line-height:2.5em;
+	padding:0.563em 0.938em 0.375 em 0.983em;
+	transition:background 0.2s;          	 	               /* Animierter Background/ wenn man drauf drückt wird es leicht schattig mit einer verzögerung von 0,2 sec */
+	-webkit-transition:background 0.2s; 
+}
+
+nav ul li a:hover {                                            /* hover effekt definieren also mit dem mauszeiger drüber */
+	background:#DBD9D8;							               /* schatten */
+	border-bottom:0.188em solid #000000;                       /* Unterer schwarzer Rahmen, dick, durchgezogen */
+}
+nav ul li a.active {
+	border-bottom:0.188em solid #000000;                       /* Wenn ich mich auf diesem Menüpunkt befinde, bleibt der untere schwarze Rahmen bestehen! */
+	
+}
+/*Seiten*/
+#seiten {
+	
+}
+
+/* Dokumentenverwaltung und Kalenderstruktur Inhaltsbereich */
+#main {											               /*main bereich wird definiert */
+	display:block;
+	width:96%;
+	max-width:980px;
+	margin:1.25em auto;							               /* Zentriert die fläche*/
+	padding:0em;
+}
+#main article {
+	display:inline-block;							
+	width:60%;								               /* Breite des Artikels */
+	background:#DAE9D7;
+	vertical-align:top;
+	margin:0em;
+	padding:0em;
+	text-align:center;	
+	border-bottom:0.288em solid #E7590B;	
+	height: 96.5%;			
+}
+#main article img {
+	width: 540;
+	max-width:90%;								               /* wenn man die website verkleinert passt sich das bild der bis zu 90% der größe des articles an*/
+	box-shadow:0px 0px 10px -5px #4c4948;                      /* schatten effekt*/
+	border.radius:5px;
+	
+}
+#main aside {
+	display:inline-block; 						               /* damit die article und aside nebeneinander liegen und nicht untereinander */
+	width:30.6%;
+	margin-left:3%;
+	padding:0em;
+	vertical-align:top;
+}
+
+#main aside section {							               /* allgemeine einstellungen zu den aside sektionen*/
+	margin-bottom:1.563em;
+	background: #DAE9D7;
+	border-bottom:0.188em solid #E7590B;
+}
+#main article h2 {
+	padding:1em 1.8em 1em 1.8em;
+}
+#main aside section ul {						               /* die Auflistungen einrücken in die section felder */
+	padding:0em 1.875em 1.25em 2.5em;
+}
+
+/* Logout und Login Inhaltsbereich */
+
+#amina{														   /*Zugriff auf div container mit der id amina*/
+	height:40%;									               /* breite des div bereiches */
+    width:25%;									               /* Breite des div bereiches */
+	margin: auto;								               /* zentriert div in die mitte */
+	background:#DAE9D7;							               /* hässliche graue farbe */
+
+	margin:2em auto;
+	padding:2em;
+	text-align:center;	
+	border-bottom:0.288em solid #E7590B;	
+}
+
+
+/* mobile Style */
+@media screen and (max-width:800px){			               /* bei einer größe von 800px wird die schrift auf 90% angepasst*/
+	body{
+	font-size:90%;
+	}
+}
+@media screen and (max-width:600px){			               /* artikel und seitenbereich wird ab einer breite von 600px untereinander sein und nicht nebeneinander */
+	 #main aside, #main article {
+		width:100%;
+		display:block;
+		margin:0.625em 0em 0.625em 0em;			               /* keine links rechts abstände mehr/geregelt werden die abstände oben und unten */
+	}
+}
+@media screen and (min-width:550px){			               /* wenn es größer ist als 550px jquery wird mit der toggle funktion auf die klasse nav zugreifen und arbeitet mit display none, dementsprechend ist es wichtig hier nochmal anzugeben dass es ein display block ist*/
+	nav.nav{
+	display:block !important;					               /* !important = höchste priörität*/
+	
+	}	
+}
+@media screen and (max-width:550px){			               /* bis breite von 550px */
+	body{										               /* da 550px ca smartphone größe ist wird die schriftgröße verbunden mit den abständen angepasst*/
+		font-size:86%;
+	}
+	#menubar ul li a.menubutton {
+	display:block;
+	}
+	nav {
+	display:none;								               /* navigation wird nicht mehr sichtbar (ab 550px)*/
+	height:auto;								               /* passt sich automatisch an die veränderung der größé ein(navigations punkte werden untereinander gezeigt) */
+	}
+	nav ul li {
+	display:block;
+	margin:0.3em 0em 0.3em 0em;					               /* abstände ändern in oben unten abstand weg von links und rechts abstand*/
+	}
+}

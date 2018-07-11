@@ -1,0 +1,7 @@
+1.Admin/Frau Wiesner: Benutzername: HeikeWiesner Passwort: BigBoss
+2.Gruppe 1: Benutzername: Gruppe1 Passwort: PPHSGFG
+3.Gruppe 2: Benutzername: Gruppe2 Passwort: ABDFZLO
+4.Gruppe 3: Benutzername: Gruppe3 Passwort: DOREMIF
+5.Gruppe 4: Benutzername: Gruppe4 Passwort: EFAMQPI
+6.Gruppe 5: Benutzername: Gruppe5 Passwort: GABLEFG
+7.Gruppe 6: Benutzername: Gruppe6 Passwort: IHDGDLB
